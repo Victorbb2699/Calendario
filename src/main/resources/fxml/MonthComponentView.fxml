@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<fx:root fx:id="root" styleClass="root" stylesheets="@../css/calendario.css" type="BorderPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label fx:id="mesLabel" styleClass="month" text="Mes" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="weekday" text="L" />
+            <Label styleClass="weekday" text="M" GridPane.columnIndex="1" />
+            <Label styleClass="weekday" text="X" GridPane.columnIndex="2" />
+            <Label styleClass="weekday" text="J" GridPane.columnIndex="3" />
+            <Label styleClass="weekday" text="V" GridPane.columnIndex="4" />
+            <Label styleClass="weekday" text="S" GridPane.columnIndex="5" />
+            <Label text="D" GridPane.columnIndex="6">
+               <styleClass>
+                  <String fx:value="sunday" />
+                  <String fx:value="weekday" />
+               </styleClass></Label>
+            <Label fx:id="unoLabel" styleClass="day" GridPane.rowIndex="1" />
+            <Label fx:id="dosLabel" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="tresLabel" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="cuatroLabel" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="cincoLabel" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label fx:id="seisLabel" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Label fx:id="sieteLabel" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="day" />
+                  <String fx:value="sunday" />
+               </styleClass></Label>
+            <Label fx:id="ochoLabel" styleClass="day" GridPane.rowIndex="2" />
+            <Label fx:id="nueveLabel" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="diezLabel" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="onceLabel" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="doceLabel" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label fx:id="treceLabel" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label fx:id="catorceLabel" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="day" />
+                  <String fx:value="sunday" />
+               </styleClass></Label>
+            <Label fx:id="quinceLabel" styleClass="day" GridPane.rowIndex="3" />
+            <Label fx:id="diesiseisLabel" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="diesisieteLabel" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="diesiochoLabel" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="diesinueveLabel" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label fx:id="veinteLabel" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label fx:id="veintiunoLabel" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="day" />
+                  <String fx:value="sunday" />
+               </styleClass></Label>
+            <Label fx:id="veintidosLabel" styleClass="day" GridPane.rowIndex="4" />
+            <Label fx:id="veintitresLabel" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="veinticuatroLabel" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label fx:id="veinticincoLabel" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label fx:id="veintiseisLabel" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label fx:id="veintisieteLabel" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label fx:id="veintiochoLabel" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="day" />
+                  <String fx:value="sunday" />
+               </styleClass></Label>
+            <Label fx:id="veintinueveLabel" styleClass="day" GridPane.rowIndex="5" />
+            <Label fx:id="treintaLabel" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="treintayunoLabel" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label fx:id="treintaydosLabel" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label fx:id="treintaytresLabel" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label fx:id="treintaycuatroLabel" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label fx:id="treintaycincoLabel" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="day" />
+                  <String fx:value="sunday" />
+               </styleClass></Label>
+            <Label fx:id="treintayseisLabel" styleClass="day" GridPane.rowIndex="6" />
+            <Label fx:id="treintaysieteLabel" styleClass="day" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="treintayochoLabel" styleClass="day" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label fx:id="treintaynueveLabel" styleClass="day" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label fx:id="cuarentaLabel" styleClass="day" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label fx:id="cuarentayunoLabel" styleClass="day" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label fx:id="cuarentaydosLabel" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <styleClass>
+                  <String fx:value="day" />
+                  <String fx:value="sunday" />
+               </styleClass></Label>
+         </children>
+      </GridPane>
+   </center>
+</fx:root>
